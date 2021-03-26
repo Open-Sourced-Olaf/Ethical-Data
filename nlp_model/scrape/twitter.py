@@ -22,11 +22,11 @@ def scrape(url):
     # Put results into a dictionary
     result = {'text':text}
 
-    file = open("google.txt", "w")
+    file = open("twitter.txt", "w")
 
     for data in result:
         data = str(result)
         file.write(data)
                 
 if __name__ == '__main__':
-    print(scrape("https://policies.google.com/privacy"))
+    print(scrape("https://twitter.com/en/privacy"))
