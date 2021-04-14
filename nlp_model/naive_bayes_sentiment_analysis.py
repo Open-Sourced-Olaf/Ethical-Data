@@ -70,8 +70,8 @@ def naive_bayes(text):
     results = {}
     for i in label_word.keys():
         A = float(label_records[i]) / sum(label_records.values())
-        B = probability_of_observing_test_data_given_category(text, i)
-        results[i] = B*A
+        BgivenA = probability_of_observing_test_data_given_category(text, i)
+        results[i] = BgivenA*A
     return results
 
 
